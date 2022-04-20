@@ -16,6 +16,10 @@
   --color-brown: #d5966c;
 }
 
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
 .row {
   width: 100%;
   max-width: 1400px;
@@ -44,9 +48,10 @@
   width: var(--width-percent);
   max-width: var(--max-width-medium);
   color: var(--color-white);
+  mix-blend-mode: difference;
   top: 15%;
   left: 239px;
-  font-size: 50px;
+  font-size: 67px;
   z-index: 10;
 }
 
@@ -86,7 +91,7 @@
 
 .hero-arrow {
   background-color: var(--color-brown);
-  padding: 0.42rem 0.73rem;
+  padding: 0.5rem 0.73rem;
   border-radius: 2px;
 }
 
@@ -140,7 +145,7 @@
   grid-column-gap: 156px;
   width: var(--width-percent);
   max-width: 1200px;
-  margin: 0 143px;
+  margin: 0 135px;
 }
 
 .gird-1 {
