@@ -1,0 +1,285 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --empty-container-width: 450px;
+  --empty-container-height: 600px;
+  --max-width-medium: 500px;
+  --width-percent: 100%;
+  --color-black: black;
+  --color-white: #fff;
+  --color-brown: #d5966c;
+}
+
+.row {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.empty-container {
+  width: var(--empty-container-width);
+  height: var(--empty-container-height);
+  background-color: var(--color-black);
+}
+
+.hero-section h1 {
+  position: absolute;
+  width: var(--width-percent);
+  max-width: var(--max-width-medium);
+  color: var(--color-white);
+  top: 15%;
+  left: 239px;
+  font-size: 50px;
+  z-index: 10;
+}
+
+.hero-img {
+  width: 580px;
+  height: 600px;
+  transform: translateY(2px);
+  object-fit: cover;
+}
+
+.hero-text-content {
+  position: absolute;
+  top: 12%;
+  left: 66%;
+}
+
+.hero-text-content p {
+  width: 50%;
+  line-height: 1.5;
+  margin-bottom: 2.8rem;
+}
+
+.hero-link-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.links {
+  width: var(--max-width-medium);
+  padding: 0.75rem 1.06rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.hero-arrow {
+  background-color: var(--color-brown);
+  padding: 0.42rem 0.73rem;
+  border-radius: 2px;
+}
+
+/* your day */
+
+.your-day {
+  margin-bottom: 50px;
+}
+
+.your-day-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16%;
+  transform: translateX(16px);
+}
+
+.your-day-text {
+  width: var(--width-percent);
+  max-width: 350px;
+  height: 100%;
+}
+
+.your-day h2 {
+  margin-bottom: 1.4rem;
+  font-size: 2.6rem;
+}
+
+.your-day p {
+  width: 100%;
+  max-width: 215px;
+  line-height: 1.4;
+}
+
+.gallery-image {
+  width: var(--width-percent);
+  max-width: var(--max-width-medium);
+}
+
+/* art display */
+
+.art-display {
+  margin-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 156px;
+  width: var(--width-percent);
+  max-width: 1200px;
+  margin: 0 143px;
+}
+
+.gird-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  max-width: 500px;
+}
+
+.grid-1-img {
+  height: 700px;
+  width: 116%;
+  max-width: 550px;
+  transform: translateX(35px);
+}
+
+.grid-2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  width: var(--width-percent);
+  max-width: 445px;
+  height: 315px;
+}
+
+.grid-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-end: 3;
+}
+
+.inspired {
+  width: 100%;
+  max-width: 445px;
+  height: 313px;
+  background-color: black;
+  color: #fff;
+}
+
+.inspired-text {
+  display: flex;
+  flex-direction: column;
+  transform: translate(65px, 49px);
+  width: 100%;
+  max-width: 350px;
+}
+
+.art-display h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1.4rem;
+  width: var(--max-width-medium);
+  max-width: 300px;
+}
+
+.art-display p {
+  width: 100%;
+  font-size: 1.4rem;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+footer {
+  height: 300px;
+  background-color: var(--color-black);
+}
+
+.footer-container {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 9%;
+}
+
+.footer-logo {
+  font-size: 50px;
+}
+
+.footer-text {
+  width: var(--width-percent);
+  max-width: 350px;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  transform: translateX(42px);
+}
+
+/* location */
+.our-location {
+  height: 600px;
+  background-color: black;
+  color: #fff;
+  padding: 123px;
+}
+
+.location {
+  position: absolute;
+  left: 100px;
+}
+
+.location-body {
+  background-image: url(./images/image-map.png);
+  min-height: 41.667vw;
+}
+
+.location-container {
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+}
+
+.our-location h1 {
+  font-size: 4rem;
+}
+
+.our-location h2 {
+  font-size: 3rem;
+  margin-bottom: 1.4rem;
+  color: #d5966c;
+}
+.our-location p {
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.our-location .address {
+  margin-bottom: 1.4rem;
+}
+
+.location-footer {
+  gap: 15%;
+  background-color: #d5966c;
+  height: 300px;
+  color: black;
+}
